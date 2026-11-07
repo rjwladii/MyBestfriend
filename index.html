@@ -183,6 +183,25 @@ footer {
   height: 1px;
   background: #ffda9a;
   margin: 30px auto;
+}.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #ffda9a70;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
 }
 </style>
 </head>
@@ -254,7 +273,22 @@ footer {
     <p>10/10. No refunds, no replacements.</p>
   </div>
 </section>
+<section>
+  <div class="section-label">A little collection of memories</div>
+  <h2>Our Favourite Human ❤️</h2>
+  <p>Some pictures deserve their own little corner. ✨</p>
 
+  <div class="gallery">
+    <img src="images/IMG_1684.jpeg" alt="Aradhya">
+    <img src="images/IMG_1685.jpeg" alt="Aradhya">
+    <img src="images/IMG_1687.jpeg" alt="Aradhya">
+    <img src="images/IMG_1688.jpeg" alt="Aradhya">
+    <img src="images/IMG_1689.jpeg" alt="Aradhya">
+    <img src="images/IMG_1690.jpeg" alt="Aradhya">
+    <img src="images/IMG_1691.jpeg" alt="Aradhya">
+    <img src="images/IMG_1692.jpeg" alt="Aradhya">
+  </div>
+</section>
 <section>
   <div class="section-label">Chapter 03 · No jokes for a minute</div>
   <h2>Why You're Special</h2>
